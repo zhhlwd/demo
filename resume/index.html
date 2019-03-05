@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="renderer" content="webkit" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="IE=edge,chrome=1"
+    />
+    <title>简历 | 张辉龙</title>
+    <style type="text/css">
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      a {
+        color: #455a64;
+        text-decoration: none;
+        cursor: pointer;
+        display: inline-block;
+        background-color: #455a6426;
+        border-radius: 5px;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      .clearfix:after {
+        content: '.';
+        display: block;
+        clear: both;
+        visibility: hidden;
+        height: 0;
+        font-size: 0;
+      }
+
+      body {
+        background-color: #ccc;
+        font-family: Helvetica Neue,Arial,sans-serif;
+      }
+
+      .highlight {
+        background-color: #fff5f5;
+        color: #ff502c;
+        font-size: 0.97em;
+        padding: .065em .2em;
+      }
+
+      .content {
+        width: 950px;
+        margin: 30px auto;
+        background-color: #fff;
+        box-shadow: 0 0 5px #333;
+        overflow-y: hidden;
+        overflow-x: hidden;
+        font-size: initial;
+        font-size: 16px;
+      }
+
+      .baseinfo {
+        font: 15px Tahoma, Arial, sans-serif;
+        border-top: 20px #223e64 solid;
+        background: #e8e8e8;
+        width: 950px;
+        color: white;
+        height: 210px;
+        padding: 0 80px;
+        color: #223e64;
+        box-sizing: border-box;
+        margin-bottom: 40px;
+      }
+
+      .avater-wrapper {
+        margin-top: 30px;
+      }
+
+      .avater-wrapper img {
+        border-radius: 140px;
+      }
+
+      .baseinfo-panel-right {
+        margin: 35px 0 0 20px;
+        max-width: 600px;
+      }
+
+      .avater-wrapper,
+      .baseinfo-panel-right {
+        float: left;
+      }
+
+      .baseinfo-title {
+        margin-bottom: 20px;
+        padding-left: 6px;
+      }
+
+      .baseinfo-name {
+        font-size: 40px;
+      }
+
+      .baseinfo-title span:not(.baseinfo-name) {
+        margin-left: 30px;
+      }
+
+      .baseinfo-item p {
+        height: 30px;
+        padding: 3px;
+        padding-top: 0px;
+        margin-right: 30px;
+        float: left;
+      }
+
+      .baseinfo-label,
+      .baseinfo-value {
+        height: 20px;
+        line-height: 20px;
+        text-align: left;
+        margin: 1px 2px 1px 0;
+        padding: 2px 4px 2px 4px;
+        outline: 0;
+        float: left;
+        border: 1px transparent solid;
+        font-weight: 300;
+      }
+
+      .baseinfo-label {
+        width: auto;
+        min-width: 48px;
+      }
+
+      .baseinfo-value {
+        min-width: 150px;
+      }
+
+      .right-shift {
+        margin-left: 11px;
+      }
+
+      .content-item {
+        padding: 0 80px;
+      }
+
+      .field-title-wrap {
+        height: 100%;
+        float: left;
+        position: relative;
+        width: 100%;
+        margin-bottom: 15px;
+      }
+
+      .title-icon-left {
+        width: 30px;
+        height: 30px;
+        background: #223e64;
+        float: left;
+        border-radius: 15px;
+      }
+
+      .title-icon-inner {
+        width: 12px;
+        height: 12px;
+        background: white;
+        border-radius: 10px;
+        margin: 9px;
+      }
+
+      .field-title {
+        font: 14px Helvetica Neue, Helvetica, PingFang SC,
+          \5fae\8f6f\96c5\9ed1, Tahoma, Arial, sans-serif;
+        width: auto;
+        height: 20px;
+        line-height: 20px;
+        float: left;
+        padding: 2px 10px;
+        margin: 0 5px;
+        color: #223e64;
+        font-size: 20px;
+      }
+
+      .title-icon-right {
+        position: absolute;
+        width: 750px;
+        height: 1px;
+        background: #223e64;
+        left: 40px;
+        top: 30px;
+      }
+
+      .skill {
+        margin-bottom: 15px;
+      }
+
+      .skill ul {
+        padding-left: 20px;
+      }
+
+      .skill h3 {
+        font-size: 17px;
+        color: #223e64f2;
+      }
+
+      .skill-title li {
+        color: #666;
+        margin-bottom: 4px;
+      }
+
+      .education-background {
+        margin-bottom: 15px;
+      }
+
+      .education-background div {
+        float: left;
+        width: 33.33%;
+        padding: 5px 0;
+      }
+
+      .education-background div:nth-child(2) {
+        text-align: center;
+      }
+
+      .education-background div:last-child {
+        text-align: right;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="content">
+        <div class="baseinfo">
+          <div class="avater-wrapper" style="display: none;">
+            <img
+              width="150"
+              height="150"
+              class="avater-img"
+              alt="简历头像"
+              src="http://static.500d.me/resources/500d/cvresume/images/1.jpg"
+            />
+          </div>
+          <div class="baseinfo-panel-right" style="max-width: 920px;    margin: 26px 0 0 52px;">
+            <div class="baseinfo-title">
+              <span class="baseinfo-name">张辉龙</span>
+              <span>男</span>
+              <span>21岁</span>
+              <span>19届毕业生</span>
+              <span>户籍：广东茂名</span>
+              <span>求职意向：前端开发实习</span>
+            </div>
+            <div class="baseinfo-item clearfix">
+              <p>
+                <span class="baseinfo-label">手机：</span>
+                <span class="baseinfo-value"
+                  >14718100793</span
+                >
+              </p>
+              <p>
+                <span class="baseinfo-label">博客：</span>
+                <a
+                  class="baseinfo-value  right-shift"
+                  target="_blank"
+                  href="https://zhhlwd.github.io/"
+                  >https://zhhlwd.github.io/</a
+                >
+              </p>
+              <p>
+                <span class="baseinfo-label">邮箱：</span>
+                <span class="baseinfo-value"
+                  >1962421071@qq.com</span
+                >
+              </p>
+              <p>
+                <span class="baseinfo-label">Github：</span>
+                <a
+                  class="baseinfo-value"
+                  target="_blank"
+                  href="https://github.com/zhhlwd"
+                  >https://github.com/zhhlwd</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="content-item">
+          <div class="field-title-wrap">
+            <div class="title-icon-left">
+              <div class="title-icon-inner"></div>
+            </div>
+            <div class="field-title">教育背景<br /></div>
+            <div class="title-icon-right"></div>
+          </div>
+          <div class="education-background clearfix">
+            <div class="time">2016.09-2019.06</div>
+            <div class="school">广州科技贸易职业学院</div>
+            <div class="major">专科 - 计算机应用技术</div>
+          </div>
+          <div class="field-title-wrap">
+            <div class="title-icon-left">
+              <div class="title-icon-inner"></div>
+            </div>
+            <div class="field-title">专业技能<br /></div>
+            <div class="title-icon-right"></div>
+          </div>
+          <div class="skill">
+            <ul>
+              <li class="skill-title">
+                <h3>HTML5, CSS3 &amp; JavaScript</h3>
+                <ul>
+                  <li>
+                    能够使用<sapn class="highlight">原生 JavaScript</sapn>
+                    独立制作精美网页，对<sapn class="highlight">异步</sapn>，<sapn class="highlight">闭包</sapn>，<sapn class="highlight">Event
+                    loop</sapn>等等JavaScript知识点都有所了解。
+                  </li>
+                  <li>
+                    掌握 HTML5 如 <sapn class="highlight">语义化标签</sapn>及 WebStorage
+                    API 等。
+                  </li>
+                  <li>
+                    掌握 CSS3
+                    <sapn class="highlight">动画</sapn>、<sapn class="highlight">过渡</sapn>、<sapn class="highlight">弹性盒子布局</sapn>、<sapn class="highlight">媒体查询</sapn>等常用技术。
+                  </li>
+                </ul>
+              </li>
+              <li class="skill-title">
+                <h3>Vue / React</h3>
+                <ul>
+                  <li>
+                    主攻技术栈是<sapn class="highlight">Vue和它的生态</sapn>，有 Vue 开发
+                    PC应用和移动端应用的经验，掌握组件及组件间数据传递的使用、响应式原理、路由和
+                    Vuex 的使用等。
+                  </li>
+                  <li>
+                    学习过 React ，能够看懂 JSX 、组件、
+                    props 、 state 及生命周期等。
+                  </li>
+                </ul>
+              </li>
+              <li class="skill-title">
+                <h3>微信及小程序开发</h3>
+                <ul>
+                  <li>
+                    能够使用<sapn class="highlight">mpVue</sapn> 来开发小程序。
+                  </li>
+                  <li>
+                    了解过微信开发，能够快速学习上手。
+                  </li>
+                </ul>
+              </li>
+              <li class="skill-title">
+                <h3>Node.js</h3>
+                <ul>
+                  <li>
+                    使用过<sapn class="highlight"> Express </sapn>
+                    来完成应用的后台，经常用来解决小demo中的后台响应，能够写出基本的后台应用。
+                  </li>
+                </ul>
+              </li>
+              <li class="skill-title">
+                <h3>其他</h3>
+                <ul>
+                  <li>
+                    掌握 <sapn class="highlight">Scss </sapn>的使用，理解嵌套规则、父选择器
+                    &amp; 、变量、混合等的使用。
+                  </li>
+                  <li>
+                    对 <sapn class="highlight">HTTP
+                    协议</sapn>有所了解，对能够分析解决<sapn class="highlight">跨域</sapn>等等问题。
+                  </li>
+                  <li>
+                    了解过<sapn class="highlight">性能优化</sapn>，<sapn class="highlight">浏览器渲染</sapn>和<sapn class="highlight">缓存机制</sapn>，能够分析一些相关问题。
+                  </li>
+                  <li>
+                    对于Web技术有强烈的进取心，了解前端开发动向；常常在<sapn class="highlight">GitHub</sapn>中学习前辈的优秀代码，并且主动开发各种项目来解决自己和别人的需求。
+                  </li>
+                  <li>
+                    例如：在教程资料稀缺的情况下，自行摸索，写出了比较完整的一套vuepress主题，探索出一套适合它的开发方式，还有利用<sapn class="highlight">vscode</sapn>的开发api写了一个很实用的插件，解决了开发过程中看文档麻烦的问题。
+                  </li>
+                  <li>
+                    平时有<sapn class="highlight">写博客</sapn>和<sapn class="highlight">做笔记</sapn>的习惯，并坚持关注掘金等等平台的技术分享，每天保持持续学习的习惯。
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="content-item">
+          <div class="field-title-wrap">
+            <div class="title-icon-left">
+              <div class="title-icon-inner"></div>
+            </div>
+            <div class="field-title">项目作品<br /></div>
+            <div class="title-icon-right"></div>
+          </div>
+          <div class="skill">
+            <h3>VuePress博客主题</h3>
+            <ul class="skill-title">
+              <li>
+                技术栈：<code class="highlight">Vue</code>、<code class="highlight"
+                  >Vue Router</code
+                >、<code class="highlight">VuePress</code>、<code class="highlight">SSR</code>、<code class="highlight"
+                  >Element UI</code
+                >、<code class="highlight">CSS3</code>
+              </li>
+              <li>
+                描述：
+                <ul>
+                  <li>
+                    一个现今最完整的VuePress主题，有时间排序，内容标签，评论，文章目录等等功能，参照了一个拥有2072star和456fork的hexo主题hexo-theme-indigo的外观样式，在完成各种功能后又改进了其样式，原主题能够无缝迁移。
+                  </li>
+                  <li>
+                    经过了用户的考验，在npm的总下载量大概有三百多，目前版本已经稳定下来，没有已知bug。
+                  </li>
+                </ul>
+              </li>
+              <li>
+                项目亮点：
+                <ul>
+                  <li>
+                    在国内外<sapn class="highlight">没有一个完整教程资料的情况下</sapn>，依靠文档，github
+                    issue和观看源码，成功完成了高完成度的主题，大大提高了我的自学能力，对于其他的不会的新技术我都能通过各种途径快速的上手。
+                  </li>
+                  <li>
+                    从项目设计，技术探究，发布npm，用户反馈到版本迭代，独自亲身体验和完成了一套基本的开源项目流程。
+                  </li>
+                  <li>
+                    巩固了Vue的知识技能，从没用过<sapn class="highlight">Element
+                    UI</sapn>开始到熟练使用它的基本用法，初步体验了SSR的一些特点和坑点，对接下来计划学习的Nuxt.js很有帮助。
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a
+                  href="https://github.com/zhhlwd/vuepress-theme-indigo-material"
+                  target="_blank"
+                  >源码链接</a
+                >
+                |
+                <a
+                  href="https://zhhlwd.github.io/"
+                  target="_blank"
+                  >预览链接</a
+                >
+              </li>
+            </ul>
+            <h3>移动端音乐 WebApp</h3>
+            <ul class="skill-title">
+              <li>
+                技术栈：<code class="highlight">Vue</code>、<code class="highlight"
+                  >Vue Router</code
+                >、<code class="highlight">Vuex</code>、<code class="highlight">vue-lazyload</code>、<code class="highlight">better-scroll</code>
+              </li>
+              <li>
+                描述：
+                <ul>
+                  <li>
+                    跟随黄老师前辈的视频完成的一个基于vue全家桶开发的一款移动端音乐播放器webapp，数据由qq音乐后台通过jsonp跨域和代理获取。
+                  </li>
+                </ul>
+              </li>
+              <li>
+                项目亮点：
+                <ul>
+                  <li>
+                    我的第一个应用级的Vue项目，第一个复杂应用。
+                  </li>
+                  <li>
+                    在技术上学习到了vue-lazyload，better-scroll等新知识的基本应用，更重要的是在编码技巧上学习了黄轶前辈对于Vue应用的用法，例如：对better-scroll的抽象封装，对公共逻辑的抽象mixins，对数据请求的时机等等，对组件的解耦，组件的复用，数据的处理有了重新认识。
+                  </li>
+                </ul>
+              </li>
+
+              <li>
+                <a
+                  href="https://github.com/zhhlwd/vue-music-webapp"
+                  target="_blank"
+                  >源码链接</a
+                >
+                |
+                <a
+                  href="http://music.gaodaqian.com/#/recommend"
+                  target="_blank"
+                  title="音乐播放和搜索api已经不能使用"
+                  >预览链接</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
